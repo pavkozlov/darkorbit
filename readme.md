@@ -32,8 +32,8 @@ pip install -r reqirements.txt
 
 ```
 AUTH = {
-    'login': 'pav.pav.pav',
-    'password': '021295Bb'
+    'login': 'ЛОГИН',
+    'password': 'ПАРОЛЬ'
 }
 ```
 
