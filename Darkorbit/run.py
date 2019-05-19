@@ -1,8 +1,9 @@
-from Darkorbit import auth
-from config import AUTH
+from Darkorbit.authorization import DarkorbitAuth
 
 
 def run():
-    text = auth.DarkorbitAuth(AUTH['login'], AUTH['password'])
-    for item in text.info:
-        print(f'{item} : {text.info[item]}')
+    test = DarkorbitAuth()
+    test.authorize()
+    print(test.info)
+    print(test.skylab)
+    print(test.skylab_lvls)
