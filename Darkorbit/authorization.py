@@ -46,7 +46,7 @@ class DarkorbitAuth:
         for resource in resourses:
             res = resource.find('div').text
             res = res.strip().split()
-            result[res[0]] = config.clean_data(res[1])
+            result[res[0][:len(res[0]) - 1]] = config.clean_data(res[1])
         return result
 
     def get_skylab_levels(self):
